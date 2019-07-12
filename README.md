@@ -1,4 +1,4 @@
-# Avocado
+# DataBucket Solutions
 an Angular Point of Sale system
 
 
@@ -19,7 +19,7 @@ an Angular Point of Sale system
 Install dependencies and start development server
 
 ```sh
-$ git clone https://github.com/ArashDai/Avocado.git
+$ 
 
 $ npm install
 
