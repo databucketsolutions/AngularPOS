@@ -19,7 +19,7 @@ an Angular Point of Sale system
 Install dependencies and start development server
 
 ```sh
-$ 
+$ https://github.com/databucketsolutions/AngularPOS.git
 
 $ npm install
 
