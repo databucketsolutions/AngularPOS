@@ -1,0 +1,40 @@
+<div id='register-ticket'>
+  <div id="ticket-wrapper">
+    <h3> ticket number {{this.activeTicket+1}}</h3>
+
+    <div *ngFor="let item of tickets[this.activeTicket]">
+        <div id="ticketItem">
+          {{item.name}} 
+          Amount: {{item.amount}}
+          Options: {{item.options}}
+          Modifiers: {{item.modifiers}}
+          Total: {{item.total}}
+          delete
+        </div>
+    </div>
+  </div>
+
+  <div id='totals'>
+    subtotal: {{this.totals[activeTicket]['subtotal']}}
+    tax: {{this.totals[activeTicket]['tax']}}
+    total: {{this.totals[activeTicket]['total']}}
+  </div>
+
+  <div id="ticket-select">
+    <div *ngFor="let ticket of tickets; let index = index">
+      <div (click)="setActiveTicket(index)">{{index+1}}</div>
+    </div>
+
+    <button (click)="addTicket()" alt="create new ticket">+</button>
+  </div>
+
+  <div id="ticket-control">
+    <div>Split Ticket</div>
+    <div>Checkout</div>
+    <div>Combine Tickets</div>
+    <div>Discounts</div>
+    <div>Customer Loyalty</div>
+    <div>Custom Item</div>
+  </div>
+
+</div>
